@@ -1,4 +1,4 @@
-module db-storage
+module github.com/AlisherFozilov/db-storage
 
 go 1.13
 
