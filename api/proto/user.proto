@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package storage;
+
+service Storage {
+    rpc SaveMessages (Messages) returns (Response) {
+    }
+}
+
+message Messages {
+    string id = 1;
+    int64 type = 2;
+    int64 sender_id = 3;
+    int64 receiver_id = 4;
+    string data = 5;
+    int64 timestamp = 6;
+    bool removed = 7;
+}
+
+message Response {
+    int64 status = 1;
+}
