@@ -1,7 +1,7 @@
 package app
 
 import (
-	"db-storage/pkg/services/dbcore"
+	"github.com/AlisherFozilov/db-storage/pkg/services/dbcore"
 	"github.com/AlisherFozilov/mymux/pkg/exactmux"
 	"net/http"
 )

@@ -9,5 +9,7 @@ CREATE TABLE IF NOT EXISTS messages
     removed     BOOLEAN DEFAULT FALSE
 );
 
-DROP TABLE messages;
+INSERT INTO messages (id, type, sender_id, receiver_id, data, timestamp)
+VALUES (?,?,?,?,?,?);
 
+DELETE FROM messages;

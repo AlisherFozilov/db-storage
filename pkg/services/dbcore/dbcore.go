@@ -2,6 +2,7 @@ package dbcore
 
 import (
 	"context"
+	user "github.com/AlisherFozilov/db-storage/pkg/api"
 	"github.com/jackc/pgx/v4/pgxpool"
 )
 
@@ -17,7 +18,7 @@ func NewService(pool *pgxpool.Pool, dsn DSN) *Service {
 	return &Service{pool: pool, dsn: string(dsn)}
 }
 
-func (s *Service) InitDb() {
+func (s *Service) Start() {
 	ddls := []string{messagesDDL}
 	for _, ddl := range ddls {
 		_, err := s.pool.Exec(context.Background(), ddl)
@@ -27,6 +28,14 @@ func (s *Service) InitDb() {
 	}
 }
 
-func (s *Service) SaveMessagesData() (err error) {
-	return nil
+func (s *Service) SaveMessagesData(ctx context.Context, message *user.Messages) (err error) {
+	_, err = s.pool.Exec(ctx, insertMessageIntoMessages,
+		message.Id,
+		message.Type,
+		message.SenderId,
+		message.ReceiverId,
+		message.Data,
+		message.Timestamp,
+	)
+	return err
 }

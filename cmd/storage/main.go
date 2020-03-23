@@ -2,12 +2,12 @@ package main
 
 import (
 	"context"
-	"db-storage/cmd/storage/app"
-	"db-storage/cmd/storage/rpcall"
-	"db-storage/pkg/services/dbcore"
 	"flag"
 	"fmt"
 	"github.com/AlisherFozilov/adisher/pkg/di"
+	"github.com/AlisherFozilov/db-storage/cmd/storage/app"
+	"github.com/AlisherFozilov/db-storage/cmd/storage/rpcall"
+	"github.com/AlisherFozilov/db-storage/pkg/services/dbcore"
 	"github.com/AlisherFozilov/mymux/pkg/exactmux"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"net"
@@ -19,7 +19,7 @@ import (
 var (
 	httpHost = flag.String("httpHost", "0.0.0.0", "served httpHost")
 	httpPort = flag.String("httpPort", "6666", "served httpPort")
-	dsn      = flag.String("dsn", "postgres://user:pass@localhost:5432/auth", "Postgres DSN")
+	dsn      = flag.String("dsn", "postgres://user:pass@localhost:5432/postgres", "Postgres DSN")
 	tcpHost  = flag.String("tcpHost", "0.0.0.0", "served tcpHost")
 	tcpPort  = flag.String("tcpPort", "7777", "served tcpPort")
 )
