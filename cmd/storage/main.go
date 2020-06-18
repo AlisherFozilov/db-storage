@@ -25,7 +25,6 @@ var (
 )
 
 func main() {
-
 	flag.Parse()
 	addr := net.JoinHostPort(*httpHost, *httpPort)
 
