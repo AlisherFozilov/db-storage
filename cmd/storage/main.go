@@ -24,6 +24,7 @@ var (
 	tcpPort  = flag.String("tcpPort", "7777", "served tcpPort")
 )
 
+
 func main() {
 	flag.Parse()
 	addr := net.JoinHostPort(*httpHost, *httpPort)
