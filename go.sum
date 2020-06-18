@@ -3,6 +3,16 @@ github.com/AlisherFozilov/adisher v0.0.0-20200322180150-729cff8dd46e h1:kIZyB7Id
 github.com/AlisherFozilov/adisher v0.0.0-20200322180150-729cff8dd46e/go.mod h1:9GntZQVPlbkDX63wAJyMU2gGz9v/OAq4dKZuZCLBZUo=
 github.com/AlisherFozilov/mymux v0.0.0-20200320115415-5ad5d5a795fe h1:z1jJ1KufpI5i6w6nYOdqru4LePeVhYB77BlM9kZ69CU=
 github.com/AlisherFozilov/mymux v0.0.0-20200320115415-5ad5d5a795fe/go.mod h1:aaxXwH3wjDVcqdez5iuFZia4poktaJrix4GvZWky3u8=
+github.com/AlisherFozilov/mymux v0.0.0-20200504093527-50ed67a144ec h1:lwazSxTjdGwtCkQldouLRkvzoPjH9nB80bszAem4JBc=
+github.com/AlisherFozilov/mymux v0.0.0-20200504093527-50ed67a144ec/go.mod h1:aaxXwH3wjDVcqdez5iuFZia4poktaJrix4GvZWky3u8=
+github.com/AlisherFozilov/mymux v0.0.0-20200504100839-ac42f95833cc h1:qKc7SYp1j87+3eez6AU/hGHTZi6ltiy8z1z8H0QvFkw=
+github.com/AlisherFozilov/mymux v0.0.0-20200504100839-ac42f95833cc/go.mod h1:aaxXwH3wjDVcqdez5iuFZia4poktaJrix4GvZWky3u8=
+github.com/AlisherFozilov/mymux v0.0.0-20200504103319-08f13b0736be h1:OuXJd69DZy45l3so8a1jrwvgE84Qw4ybcff6SIK1XTk=
+github.com/AlisherFozilov/mymux v0.0.0-20200504103319-08f13b0736be/go.mod h1:aaxXwH3wjDVcqdez5iuFZia4poktaJrix4GvZWky3u8=
+github.com/AlisherFozilov/mymux v0.0.0-20200504111004-5ec5700a7e60 h1:bOdSxLb2Di/nixU1x+6rGQo2Zsu1RDdcxg3tOUIAdCU=
+github.com/AlisherFozilov/mymux v0.0.0-20200504111004-5ec5700a7e60/go.mod h1:aaxXwH3wjDVcqdez5iuFZia4poktaJrix4GvZWky3u8=
+github.com/AlisherFozilov/mymux v0.0.0-20200504115549-ef7e34791fc9 h1:MEtqlIipRw3UyoADzU61+G17BD1zS9phNvtAQgn+ZyU=
+github.com/AlisherFozilov/mymux v0.0.0-20200504115549-ef7e34791fc9/go.mod h1:aaxXwH3wjDVcqdez5iuFZia4poktaJrix4GvZWky3u8=
 github.com/AlisherFozilov/useful v0.0.0-20200322105751-d10b5d4cce3e h1:jpy1jRZEUfIbo1tAhaAJoD4/ACTp7wmrxQfgrmUY6C8=
 github.com/AlisherFozilov/useful v0.0.0-20200322105751-d10b5d4cce3e/go.mod h1:GiIAY0JEgjkjFumS1qiUJPN9F9QtnmHeIHapsQAX7pg=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=

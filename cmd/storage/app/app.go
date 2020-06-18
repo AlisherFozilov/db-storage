@@ -11,8 +11,8 @@ type Server struct {
 	dbSvc  *dbcore.Service
 }
 
-func NewServer(router *exactmux.ExactMux) *Server {
-	return &Server{router: router}
+func NewServer(router *exactmux.ExactMux, dbcoreSvc *dbcore.Service) *Server {
+	return &Server{router: router, dbSvc: dbcoreSvc}
 }
 
 func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
@@ -26,6 +26,6 @@ func (s *Server) Start() {
 func (s *Server) InitRoutes() {
 	mux := s.router
 
-	mux.POST("/save/messages", s.handleSaveData())
+	mux.GET("/msg/all_history/{senderID}/{receiverID}", s.handleGetAllHistory())
+	//mux.POST("/save/messages", s.handleSaveData()) //bad idea
 }
-

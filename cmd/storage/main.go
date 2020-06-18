@@ -18,8 +18,8 @@ import (
 
 var (
 	httpHost = flag.String("httpHost", "0.0.0.0", "served httpHost")
-	httpPort = flag.String("httpPort", "6666", "served httpPort")
-	dsn      = flag.String("dsn", "postgres://user:pass@localhost:5432/postgres", "Postgres DSN")
+	httpPort = flag.String("httpPort", "10123", "served httpPort")
+	dsn      = flag.String("dsn", "postgres://user:pass@localhost:5432/app", "Postgres DSN")
 	tcpHost  = flag.String("tcpHost", "0.0.0.0", "served tcpHost")
 	tcpPort  = flag.String("tcpPort", "7777", "served tcpPort")
 )
